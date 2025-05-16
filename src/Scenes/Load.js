@@ -59,6 +59,28 @@ class Load extends Phaser.Scene {
             ],
         });
 
+        this.anims.create({
+            key: 'coinIdle',
+            defaultTextureKey: 'tilemap_sheet',
+            frames: [
+                {frame: 151},
+                {frame: 152}
+            ],
+            repeat: -1,
+            frameRate: 6
+        });
+
+        this.anims.create({
+            key: 'waterIdle',
+            defaultTextureKey: 'tilemap_sheet',
+            frames: [
+                {frame: 33},
+                {frame: 53}
+            ],
+            repeat: -1,
+            frameRate: 6
+        });
+
          // ...and pass to the next Scene
          this.scene.start("platformerScene");
     }
